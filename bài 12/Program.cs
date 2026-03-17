@@ -36,6 +36,8 @@ namespace bài_12
                 {
                     Console.WriteLine("Sinh viên cần tìm: ");
                     student.In();
+                    Console.ReadKey();
+                    return;
                 }
             }
             Console.WriteLine("Không tìm thấy sinh viên cần tìm");
