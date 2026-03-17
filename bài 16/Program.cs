@@ -8,6 +8,8 @@ namespace bài_16
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.InputEncoding = Encoding.UTF8;
+            Console.WriteLine("Phạm Nhật Khoa");
+            Console.WriteLine("2415053122221");
             Console.Write("Nhập vào một chuỗi: ");
             string word = Console.ReadLine();
             Dictionary<char,int> tuDien = new Dictionary<char,int>();
@@ -29,6 +31,7 @@ namespace bài_16
             {
                 Console.Write($"{z.Key}:{z.Value} ");
             }
+            Console.ReadKey();
         }
     }
 }
