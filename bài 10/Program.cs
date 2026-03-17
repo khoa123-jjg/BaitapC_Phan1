@@ -8,6 +8,8 @@ namespace bài_10
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.InputEncoding = Encoding.UTF8;
+            Console.WriteLine("Phạm Nhật Khoa");
+            Console.WriteLine("2415053122221");
             List<int> list = new List<int>();
             Console.Write("Nhập số lượng phần tử của list:");
             int n = int.Parse(Console.ReadLine());
