@@ -33,6 +33,8 @@ namespace bài_13
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.InputEncoding = Encoding.UTF8;
+            Console.WriteLine("Phạm Nhật Khoa");
+            Console.WriteLine("2415053122221");
             List<Student> list = new List<Student>();
             list.Add(new Student("Nguyen Van A", 1));
             list.Add(new Student("Nguyen Van B", 2));
@@ -46,7 +48,7 @@ namespace bài_13
             Console.WriteLine("--- DANH SÁCH SINH VIÊN ---");
             foreach (Student student in list)
                 student.In();
-
+            Console.ReadKey();
         }
     }
 }
