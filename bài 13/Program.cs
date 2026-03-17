@@ -19,16 +19,6 @@ namespace bài_13
     }
     internal class Program
     {
-        static void xoa(List<Student> list, int ID)
-        {
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (list[i].Id == ID)
-                {
-                    list.Remove(list[i]);
-                }
-            }
-        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -40,14 +30,12 @@ namespace bài_13
             list.Add(new Student("Nguyen Van B", 2));
             list.Add(new Student("Nguyen Van C", 3));
             Console.WriteLine("--- DANH SÁCH SINH VIÊN ---");
-            foreach (Student student in list)
-                student.In();
-            Console.WriteLine("Nhập ID sinh viên cần xóa:");
-            int id = int.Parse(Console.ReadLine());
-            xoa(list, id);
-            Console.WriteLine("--- DANH SÁCH SINH VIÊN ---");
-            foreach (Student student in list)
-                student.In();
+            int count = 0;
+             foreach (Student student in list)
+            {
+                count++;
+            }
+            Console.WriteLine("Số lượng sinh viên: " + count);
             Console.ReadKey();
         }
     }
