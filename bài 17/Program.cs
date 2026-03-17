@@ -8,6 +8,8 @@ namespace bài_17
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.InputEncoding = Encoding.UTF8;
+            Console.WriteLine("Phạm Nhật Khoa");
+            Console.WriteLine("2415053122221");
             List<int> list = new List<int>();
             Dictionary<int, int> solan = new Dictionary<int, int>();
             Console.Write("Nhập số lượng phần tử của list:");
@@ -47,6 +49,7 @@ namespace bài_17
                     Console.Write($"{k.Key}:{k.Value} ");
                 }
             }
+            Console.ReadKey();
         }
     }
 }
