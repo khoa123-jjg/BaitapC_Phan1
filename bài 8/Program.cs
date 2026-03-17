@@ -8,6 +8,8 @@ namespace bài_8
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.InputEncoding = Encoding.UTF8;
+            Console.WriteLine("Phạm Nhật Khoa");
+            Console.WriteLine("2415053122221");
             List<int> list = new List<int> { 1,2,3,4,5,6};
             Console.WriteLine($"Các phần tử ban đầu trong list là: " + string.Join(",", list));
             list.Reverse();
